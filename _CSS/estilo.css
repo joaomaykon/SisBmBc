@@ -1,0 +1,289 @@
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #c32121;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #A11;
+    color: #fff;
+    transition: all 0.1s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #FF2800;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #ff2800;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #ff2800;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+article {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #d6d5d5;
+    margin-bottom: 5px;
+}
+section {
+    width: 690px;
+    height: 400px;
+    margin-left: 10px;
+    float: left;
+    background-color: yellow;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+table#consulta {
+    border: 1px solid #0c0c0c;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#consulta td{
+    border: 1px solid #0f0f0f;
+    padding: 10px;
+    text-align: center;
+}
+
+.switch {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+  }
+  
+  .switch + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+  }
+  .switch--shadow + label {
+    padding: 2px;
+    width: 60px;
+    height: 30px;
+    background-color: #dddddd;
+    border-radius: 30px;
+  }
+  .switch--shadow + label:before,
+.switch--shadow + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+.switch--shadow + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  transition: all 0.4s;
+}
+.switch--shadow + label:after {
+  width: 31px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+.switch--shadow:checked + label:before {
+    background-color: #8ce196;
+  }
+  .switch--shadow:checked + label:after {
+    transform: translateX(30px);
+  }
+
+  /*Gerar calendario*/
+  div#divCalendario {
+    position:relative;
+    border-width:2px;
+    border-radius: 5px;
+    background: green;
+    font: normal;
+    color: white;
+    width: 75px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    margin: 1px 2px 1px 2px;
+}
+
+section#secPcp{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 630px;
+    height: 350px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(27, 24, 24);
+    box-shadow: 3px 3px 10px rgb(27, 24, 24);
+    text-align: center;
+    vertical-align: center;
+}
+
+section#secSec{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 630px;
+    height: 60px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(27, 24, 24);
+    text-align: center;
+    vertical-align: center;
+}
+/*Encerra calendario*/

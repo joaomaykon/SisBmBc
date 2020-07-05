@@ -1,0 +1,3 @@
+alterações feitas nessa versão:
+inserido no novo BD bd_sisbmbc;
+alterado as páginas para a nova conexao e novas tabelas.

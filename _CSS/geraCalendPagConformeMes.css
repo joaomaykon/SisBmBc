@@ -1,0 +1,58 @@
+body{
+    background: rgb(252, 79, 36);
+    font: normal 15pt Arial;
+}
+
+
+header{
+    color: white;
+    text-align: center;
+    
+}
+div {
+    text-align: center;
+    padding: 5px;
+}
+div.divCalendario {
+    position:relative;
+    border-width:2px;
+    background: green;
+    font: normal;
+    color: white;
+    width: 75px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    margin: 1px 2px 1px 2px;
+}
+
+section#secPcp{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 630px;
+    height: 350px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(27, 24, 24);
+}
+
+section#secSec{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 630px;
+    height: 40px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(27, 24, 24);
+    text-align: center;
+    vertical-align: center;
+}
+
+
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
